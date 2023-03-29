@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+body {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 4em;
+    font-size: 18px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+.home-title{
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+    font-size: 2em;
+    margin: 10px;
+}
+
+h2{
+    font-family: 'Rock Salt', 'Bradley Hand';
+    font-size: 2em;
+    margin: 0;
+}
+
+
+hr {
+    height: 3px;
+    margin: 35px 0;
+    background-color: #396E94;
+  }
+
+#logo_link{
+    padding-top: 5px;
+    padding: 35px;
+}
+h1{
+    text-align: center;
+}
+h4{
+    text-align: center;
+    margin-top: 0px;
+}
+h5{
+    text-align: center;
+    margin-top: -13px;
+
+}
+
+#content{
+    grid-column: 1/15;
+    max-width: 1600px;
+    text-align: center;
+    
+    
+}
+#animated{
+    width: 100%;
+}
+#aside{
+    grid-column: 15/19;
+    
+    
+    
+}
+#additional_information{
+    grid-column: 15/19;
+    background-color: rgb(162, 221, 221);
+    height: max-content;
+    max-width: 100%;
+    border: 2px solid #396E94;
+    padding: 5px;
+    margin: 10px;
+    
+}
+#additional_information p{
+    text-align: justify;
+}
+#additional_information hr{
+    height: 3px;
+    margin: 35px 0;
+    background-color: #fd7f18d7;
+}
+#intro{
+    grid-column: 1/19;
+    
+}
+nav{
+    background-color: #396E94;
+    text-align: center;
+    line-height: 1em;
+    font-size: 1.2em;
+}
+nav  {
+    list-style-type: none;
+    display: flex;
+  }
+nav a{
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+    min-width: 90px;
+    min-height: 1em;
+    
+}
+
+#hero-msg h1, #hero-msg h4, .button-box, main section {
+    text-align: center;
+}
+#hero-message{
+    margin-top: 30px;
+    margin-bottom: -10px;
+}
+
+.button-box{
+    margin-top: -23px;
+    margin-left: -16px;
+    padding-bottom: 35px;
+}
+
+#background{
+    height: 725px;
+}
+
+#head{
+    background-color: #396E94 ;
+    
+}
+
+nav a:hover {
+    background-color: #fd7f18d7;
+    color: #fcfbfb;
+}
+.book{
+    background-color: #396E94;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: white;
+    box-shadow: 5px 5px 10px #396E94;
+}
+.join{
+    background-color: beige;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+    font-size: 18px;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+.book:hover {
+    background-color: #fd7f18d7;
+    color: black;
+    box-shadow: 5px 5px 10px #fd7f18d7;
+}
+.join:hover{
+    background-color: #396E94;
+    color: white;
+    box-shadow: 5px 5px 10px #fd7f18d7;
+}
+#background{
+    background-color: rgb(253, 251, 247);
+    max-width: max-content;
+}
+.msg p{
+    padding-bottom: 15px;
+}
+
+.logo{
+    float: left;
+    margin-top: -10px;
+    width: 80px;
+    padding-top: 10px;
+    border-radius: 100%;
+}
+.icon{
+    width: 80px;
+   
+    border-radius: 100%;
+    margin-left: -45px;
+    margin-bottom: -20px;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+.card-img{
+    width: 300px;
+    height: 200px;
+    border: 4px solid #396E94;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+.card-img:hover{
+    opacity: .6;
+    transform: scale(1.1);
+}
+#hero-img{
+    width: 100%;
+    height: 50%;
+    margin-top: -10px;
+    margin-left: -10px;
+}
+.hardworker{
+    float: left;
+    margin-left: 15px;
+    width: 500px;
+    margin-top: 15px;
+    box-shadow: 5px 5px 10px #fd7f18d7;
+}
+.msg{
+    float: right;
+    margin-top: -400px;
+    margin-left: 340px;
+    margin-right: 10px;
+    background-color: #fd7f18d7;
+    line-height: 1.5em;
+    padding: 35px;
+    box-shadow: 5px 5px 10px #396E94;
+}
+.coding-card, .building-card, .exposition-card {
+    margin: 1px;
+}
+footer{
+    grid-column: 1/19;
+    background-color: #396E94;
+    color: #fcfbfb;
+    padding: 25px 50px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer p{
+    font-size: 1.2em;
+}
+footer p a:hover{
+    text-decoration: underline;
+}
+.so{
+    width: 50px;
+    padding-top: 5px;
+    height: 50px;
+    
+}
