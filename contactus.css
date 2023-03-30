@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+body {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 4em;
+    font-size: 18px;
+    text-align: center;
+  }
+.home-title{
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+    font-size: 2em;
+    margin: 10px;
+}
+
+h2{
+    font-size: 2em;
+    margin: 0;
+}
+hr {
+    height: 3px;
+    margin: 35px 0;
+    background-color: #396E94;
+  }
+
+#logo_link{
+    padding-top: 5px;
+    padding: 35px;
+}
+h1{
+    text-align: center;
+}
+h4{
+    text-align: center;
+    margin-top: 0px;
+}
+h5{
+    text-align: center;
+    margin-top: -13px;
+
+}
+
+nav{
+    background-color: #396E94;
+    text-align: center;
+    line-height: 1em;
+    font-size: 1.2em;
+}
+nav  {
+    list-style-type: none;
+    display: flex;
+  }
+nav a{
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+    min-width: 90px;
+    min-height: 1em;
+    
+}
+
+#head{
+    background-color: #396E94 ;
+    
+}
+
+nav a:hover {
+    background-color: #fd7f18d7;
+    color: #fcfbfb;
+}
+
+.logo{
+    float: left;
+    margin-top: -10px;
+    width: 80px;
+    padding-top: 10px;
+    border-radius: 100%;
+}
+
+
+
+
+
+#hero-img{
+    width: 100%;
+}
+#middle-img{
+    width: 400px;
+    border-radius: 1em;
+    margin-top: -50px;
+    margin-bottom: 100px;
+}
+
+
+
+
+
+
+
+form{
+    margin: auto;
+    width: 400px;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+form li + li{
+    margin-top: 1em;
+}
+label{
+    /*for the uniform size & alignment*/
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+input, area{
+    /* inorder to make sure that all text fields have the same font settings by default, texteras have monospace font */
+    font: 1em sans-serif;
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+}
+input:focus, textarea:focus {
+    /* Additional highlight for focused elements */
+    border-color: #000;
+}
+textarea{
+    /*Align multiline text fields with their labels */
+    vertical-align: top;
+    /* provide space no type some text*/
+    height: 5em;
+}
+.button{
+    padding-left: 90px;
+}
+button{
+    margin-left: 0.5em;
+
+}
+#feedback{
+    background-color: antiquewhite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    /*make this element invisiblee until we are ready for it*/
+    display: none;
+}
+.moveDown{
+    margin-top: 3em;
+}
+
+
+
+
+footer{
+    grid-column: 1/19;
+    background-color: #396E94;
+    color: #fcfbfb;
+    padding: 25px 50px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer p{
+    font-size: 1.2em;
+}
+footer p a:hover{
+    text-decoration: underline;
+}
+.so{
+    width: 50px;
+    padding-top: 5px;
+    height: 50px;
+    
+}
