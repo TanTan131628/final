@@ -90,11 +90,14 @@ nav a:hover {
     border-radius: 1em;
     margin-top: -50px;
     margin-bottom: 100px;
+    box-shadow: 5px 5px 10px #6f7364;
 }
 
 
 
-
+h1{
+    color: #396E94;
+}
 
 
 
@@ -102,7 +105,7 @@ form{
     margin: auto;
     width: 400px;
     padding: 1em;
-    border: 1px solid #ccc;
+    border: 3px solid #396E94;
     border-radius: 1em;
 }
 ul{
@@ -125,11 +128,11 @@ input, area{
     font: 1em sans-serif;
     width: 300px;
     box-sizing: border-box;
-    border: 1px solid #999;
+    border: 1px solid #396E94;
 }
 input:focus, textarea:focus {
     /* Additional highlight for focused elements */
-    border-color: #000;
+    border-color: #396E94;
 }
 textarea{
     /*Align multiline text fields with their labels */
@@ -145,7 +148,7 @@ button{
 
 }
 #feedback{
-    background-color: antiquewhite;
+    background-color: #fd7f18d7;
     position: absolute;
     top: 0;
     left: 0;
@@ -184,3 +187,9 @@ footer p a:hover{
     height: 50px;
     
 }
+
+hr {
+    height: 3px;
+    margin: 35px 0;
+    background-color: #396E94;
+  }
