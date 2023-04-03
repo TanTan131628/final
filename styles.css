@@ -57,9 +57,6 @@ h5{
 }
 #aside{
     grid-column: 15/19;
-    
-    
-    
 }
 #additional_information{
     grid-column: 15/19;
@@ -112,8 +109,8 @@ nav a{
 }
 
 .button-box{
-    margin-top: -23px;
-    margin-left: -16px;
+    margin-top: 20px;
+    margin-left: 0px;
     padding-bottom: 35px;
 }
 
@@ -139,6 +136,12 @@ nav a:hover {
     color: white;
     box-shadow: 5px 5px 10px #396E94;
 }
+
+.book:hover {
+    background-color: #fd7f18d7;
+    color: black;
+    box-shadow: 5px 5px 10px #fd7f18d7;
+}
 .join{
     background-color: beige;
     padding: 15px 30px;
@@ -146,11 +149,6 @@ nav a:hover {
     border-radius: 5px;
     font-size: 18px;
     box-shadow: 5px 5px 10px #6f7364;
-}
-.book:hover {
-    background-color: #fd7f18d7;
-    color: black;
-    box-shadow: 5px 5px 10px #fd7f18d7;
 }
 .join:hover{
     background-color: #396E94;
