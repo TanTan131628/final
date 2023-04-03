@@ -6,6 +6,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        * {box-sizing: border-box;}
+        .mySlides {display: none;}
+        img {vertical-align: middle;}
+        .slideshow-container{
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+        .prev, .next {
+            color: white;
+            font-family: verdana, sans-serif;
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            font-weight: bold;
+            font-size: 28px;
+            transform: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            z-index: 1;
+        }
+        .next{
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        .prev{
+            left: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        .prev:hover, .next:hover{
+            color: black;
+            background-color: white;
+        }
+        .text{
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+        .numbertext{
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+        .dot{
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+
+        }
+        .acrive, .dot:hover{
+            background-color: #717171;
+        }
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+        @keyframes fade{
+            from {opacity: .4}
+            to {opacity : 1}
+        }
+        @media only screen and (max-width: 300px) {
+            .prev, .next, .text {font-size: 11px;}
+        }
+
+    </style>
 </head>
 <body>
     <div id="intro">
@@ -21,23 +101,55 @@
                     <a href="site-plan.html">Site plan</a>
                     <a href="contactus.html">Contact Us</a>
                 </nav>
-              </section>
-         </header>
-         <div id="hero">
-             <section id="hero-message">
-                 <h1 class="home-title">Bring The Future Code</h1>
-                 <h4>Make The Future With AI Tech</h4>
-                 <h5>THE AI TECH PLATFORM FOR CODING THE FUTURE PRESENT</h5>
-             </section>
-         </div>
-         <hr>
-         <div id="hero-box">
-             <img id="hero-img" src="images/hero.jpg" alt="AI usefull">
-         </div>
-         <div class="button-box">
-             <a class="book" href="contactus.html">Book Now</a>
-         </div>
-         <hr>
+            </section>
+        </header>
+
+        <div id="hero">
+            <section id="hero-message">
+                <h1 class="home-title">Bring The Future Code</h1>
+                <h4>Make The Future With AI Tech</h4>
+                <h5>THE AI TECH PLATFORM FOR CODING THE FUTURE PRESENT</h5>
+            </section>
+        </div>
+        <hr>
+      
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext"> 1 / 4</div>
+                <img src="images/hero.jpg" style="width: 100%">
+                <div class="text">HOME</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext"> 2 / 4</div>
+                <img src="https://images.pexels.com/photos/136320/pexels-photo-136320.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" style="width: 100%">
+                <div class="text">CODING</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext"> 3 / 4</div>
+                <img src="images/exposing.png (1).jpg" style="width: 100%">
+                <div class="text">EXPOSITION</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext"> 4 / 4</div>
+                <img src="https://bassmintstudios.co.za/wp-content/uploads/2020/12/contactus.jpg" style="width: 100%">
+                <div class="text">CONTACT US</div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)"><</a>
+            <a class="next" onclick="plusSlides(1)">></a>
+        </div>
+        <br>
+
+        <div style="text-align: center;">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+
+        <div class="button-box">
+            <a class="book" href="contactus.html">Book Now</a>
+        </div>
+        <hr>
         <h2>Overview</h2>
         <h3>Purpose</h3>
         <p>"AI TECH" is concerning AI (Artificial Intelligence) Technology. It has been set up as an industry-oriented Technology Platform to establish continuous dialogue between Human and Future. The general problem of simulating (or creating) intelligence has broken down into sub-problems. These consist of particular traits or capabilities that researches expect an intelligent system to display. The traits described below have received the most attention...</p>
@@ -128,5 +240,30 @@
         </div>
     </footer>
     
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex) ;
+
+        function plusSlides(n) {
+            showSlides(slideIndex +=n);
+        }
+        function currentSlide(n){
+            showSlides(slideIndex = n);
+        }
+        function showSlides(n){
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n> slides.length) {slideIndex = 1}
+            if (n< 1) {slideIndex = slides.length}
+            for (i=0; i < slides.length; i++) {slides[i].style.display ="none";}
+            for (i=0; i < dots.length; i++) {dots[i].className.replace(" active", "");}
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+
+        }
+    </script>
+
 </body>
 </html>
